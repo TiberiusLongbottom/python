@@ -50,15 +50,4 @@ class Television:
         return f"Power = {self._power_status}, Channel = {self._channel}, Volume = {self._volume}, Muted = {self._muted}"
 
 
-# Additional code for testing if needed
-if __name__ == "__main__":
-    tv = Television()
-    print(tv)  # This should print: Power = False, Channel = 0, Volume = 0, Muted = False
-    tv.power()
-    tv.channel_up()
-    tv.volume_up()
-    print(tv)  # This should print: Power = True, Channel = 1, Volume = 1, Muted = False
-    tv.mute()
-    print(tv)  # This should print: Power = True, Channel = 1, Volume = 0, Muted = True
-    tv.volume_down()
-    print(tv)  # This should print: Power = True, Channel = 1, Volume = 0, Muted = False
+
